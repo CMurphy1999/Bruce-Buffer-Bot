@@ -15,7 +15,8 @@ function bruceBufferBot() {
         Now, introducing the challenger! Fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighters[Math.floor(Math.random()*fighters.length)]}!`
         
     } else {
-        return 
+        return `It's TIME for our main event of the evening. Introducing first, fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighters[Math.floor(Math.random()*fighters.length)]}! 
+        Now, introducing their opponent! Fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighters[Math.floor(Math.random()*fighters.length)]}!`
     }
 }
 
