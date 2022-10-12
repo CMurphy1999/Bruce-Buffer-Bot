@@ -9,6 +9,7 @@ const inches = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 const pound = [155, 135, 145, 170, 115, 185, 265, 125, 135, 205, 125];
 
 
+// I wanted to create this function to make sure the fighters names never matched.
 function fighterPicker() {
     let fighter1 = fighters[Math.floor(Math.random()*fighters.length)];
     let fighter2 = fighter1;
@@ -25,12 +26,12 @@ function bruceBufferBot() {
     let fighter1, fighter2 = fighterPicker()
     if (championshipBoutChance <= 7) {
         return `It's TIME for our main event of the evening. Introducing first, the champion, representing ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighters[Math.floor(Math.random()*fighters.length)]}! 
-        Now, introducing the challenger! Fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighter1}!`
+        Now, introducing the challenger! Fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighter1}!`;
         
     } else {
         return `It's TIME for our main event of the evening. Introducing first, fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighters[Math.floor(Math.random()*fighters.length)]}! 
-        Now, introducing their opponent! Fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighter2}!`
+        Now, introducing their opponent! Fighting out of ${location[Math.floor(Math.random()*location.length)]}, they stand ${feet[Math.floor(Math.random()*feet.length)]} feet, ${inches[Math.floor(Math.random()*inches.length)]} inches tall. Weighing in at ${pound[Math.floor(Math.random()*pound.length)]} pounds, ${fighter2}!`;
     }
 }
 
-console.log(bruceBufferBot())
+console.log(bruceBufferBot());
